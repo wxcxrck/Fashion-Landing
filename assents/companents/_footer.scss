@@ -1,0 +1,101 @@
+.footer {
+    padding-top: 115px;
+    @include font (400, 15px, $liteblack);
+    background: $litewhite;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    &__title {
+        @include font (700, 25px, $liteblack);
+        margin-bottom: 17px;
+    }
+    &__text {
+        max-width: 406px;
+        margin-bottom: 41px;
+    }
+    &__adres {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    &__bangladesh {
+        margin-left: 26px;
+    } 
+    &__line {
+        @include btn (100%, 1px, $liteblack);
+        margin-top: 3px;
+        margin-bottom: 4px;
+    }
+    &__info {
+        max-width: 237px;
+        margin-bottom: 16px;
+    }
+    &__input {
+        margin-bottom: 70px;
+        padding: 11px 24px ;
+        width: 532px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sabtitle {
+        @include font (600, 20px, $liteblack);
+        margin-bottom: 6px;
+    }
+    &__list {
+        margin-top: 21px;
+    }
+    &__fon {
+        background: $aqua;
+        padding: 35px 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 106px;
+    }
+}
+@media screen and (max-width:1050px) {
+        .footer {
+            &__title--two {
+                margin-top: 50px;
+            }
+            &__left {
+                margin-right: 80px;
+            }
+        }
+}
+@media screen and (max-width:600px) {
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__item {
+            margin-right: 90px;
+        }
+        &__bottom--item {
+            margin-top: 50px;
+        }
+        &__input {
+            width: auto;
+        }
+    }
+}
+@media screen and (max-width:487px) {
+    .footer {
+       &__middle--item {
+        margin-top: 50px;
+       }
+    }
+}
+@media screen and (max-width:377px) {
+    .footer {
+        &__bangladesh {
+            margin-right: 10px;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 20px;
+        }
+    }
+}

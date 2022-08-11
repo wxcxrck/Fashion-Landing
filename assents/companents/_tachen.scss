@@ -1,0 +1,49 @@
+.tachen {
+    background: url(../assents/img/tachen/background.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    &__nick {
+        @include font (400, 18px, $liteblack);
+    }
+    &__title {
+        @include font (700, 80px, $liteblack);
+        margin-bottom: 5px;
+    }
+    &__btn {
+        @include font (500, 18px, $white);
+        background: $liteblack;
+        padding:4px 26px;
+    }
+
+    &__btn:hover {
+        color: $liteblack;
+        background: #fff;
+        transition: .3s;
+    }
+    &__content {
+        position: relative;
+    }
+    &__info {
+        position: absolute;
+        top: 434px;
+        left: 0;
+    }
+}
+@media screen and (max-width:690px) {
+    .tachen {
+        margin-top: 365px;
+    }
+}
+@media screen and (max-width:530px) {
+    .tachen {
+        margin-top: 90px;
+        &__info {
+            top: 205px;
+
+        }
+        &__title {
+            font-size:45px;
+        }
+    }
+}

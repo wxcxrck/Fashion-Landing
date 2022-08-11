@@ -1,0 +1,67 @@
+.features {
+    margin: 120px 0 114px;
+
+    &__content {
+        display: flex;
+    }
+    &__mini--one {
+        margin-right: 23px;
+ 
+    }
+    &__info {
+        display: flex;
+        margin-top: 22px;
+    }
+    &__left {
+        margin-right: 30px;
+    }
+    &__right {
+        position: relative;
+    }
+    &__fon {
+        background: #000000;
+        opacity: 0.5;
+        width: 100%;
+        height: 98%;
+        position: absolute;
+        z-index: 1;
+    }
+    &__btn {
+        background: $white;
+        @include font (500, 18px, $liteblack);
+        padding:4px, 24px;
+        position: absolute;
+        left: 28px;
+        bottom: 25px;
+        z-index: 2;
+    }
+    &__big {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .features {
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__left {
+            margin: 0 30px 30px;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .features {
+        &__img {
+            max-width: 100%;
+        }
+        &__info {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__mini--one {
+            margin: 0 0 30px;
+        }
+    }
+}
